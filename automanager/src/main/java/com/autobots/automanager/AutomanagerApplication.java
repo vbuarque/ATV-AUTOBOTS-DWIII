@@ -9,11 +9,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Component;
 
-import com.autobots.automanager.entidades.Cliente;
-import com.autobots.automanager.entidades.Documento;
-import com.autobots.automanager.entidades.Endereco;
-import com.autobots.automanager.entidades.Telefone;
-import com.autobots.automanager.repositorios.ClienteRepositorio;
+import com.autobots.automanager.entities.Cliente;
+import com.autobots.automanager.entities.Documento;
+import com.autobots.automanager.entities.Endereco;
+import com.autobots.automanager.entities.Telefone;
+import com.autobots.automanager.repositories.ClienteRepositorio;
 
 @SpringBootApplication
 public class AutomanagerApplication {
@@ -25,7 +25,7 @@ public class AutomanagerApplication {
 	@Component
 	public static class Runner implements ApplicationRunner {
 		@Autowired
-		public ClienteRepositorio repositorio;
+		public ClienteRepositorio repositories;
 
 		@Override
 		public void run(ApplicationArguments args) throws Exception {
@@ -64,8 +64,7 @@ public class AutomanagerApplication {
 			cliente.getDocumentos().add(rg);
 			cliente.getDocumentos().add(cpf);
 			
-			repositorio.save(cliente);
+			repositories.save(cliente);
 		}
 	}
-
 }

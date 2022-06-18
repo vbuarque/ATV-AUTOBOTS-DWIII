@@ -1,4 +1,4 @@
-package com.autobots.automanager.entidades;
+package com.autobots.automanager.entities;
 
 import java.util.ArrayList;
 import java.util.Date;
