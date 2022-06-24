@@ -19,6 +19,8 @@ Atividade relacionada a matéria de **Desenvolvimento WEB III** ministrada pelo 
 >
 > Foi seguido com base na versão inicial do projeto no repositório: [ATV-AUTOBOTS](https://github.com/gerson-pn/atvi-autobots-microservico-spring)
 
+---
+
 <div align='center'>
 Vinicius Buarque - 3º Semestre Desenvolvimento de Software Multiplataforma - São José dos Campos FATEC - "Professor Jessen Vidal"
 <div>
