@@ -1,9 +1,7 @@
 package com.autobots.automanager.models;
 
 import java.util.List;
-
 import org.springframework.stereotype.Component;
-
 import com.autobots.automanager.entities.Endereco;
 
 @Component

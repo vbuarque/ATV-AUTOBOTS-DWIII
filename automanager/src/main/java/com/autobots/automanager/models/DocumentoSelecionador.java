@@ -8,13 +8,13 @@ import com.autobots.automanager.entities.Documento;
 
 @Component
 public class DocumentoSelecionador {
-  public Documento selecionar(List<Documento> documentos, long id) {
-    Documento selecionado = null;
-    for (Documento documento : documentos) {
-      if (documento.getId() == id) {
-        selecionado = documento;
-      }
-    }
-    return selecionado;
-  }
+	public Documento selecionar(List<Documento> documentos, long id) {
+		Documento selecionado = null;
+		for (Documento documento : documentos) {
+			if (documento.getId() == id) {
+				selecionado = documento;
+			}
+		}
+		return selecionado;
+	}
 }
